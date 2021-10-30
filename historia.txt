@@ -1,5 +1,5 @@
-<<<<<<< HEAD
+
 mi nombre es roger tengo 27 a�os de edad soy casado me case el año pasado
-=======
-mi nombre es roger tengo 25 a�os de edad soy soltero
->>>>>>> bbcc5a4... cambios al archivo historia describiendo la edad
+
+mi nombre es roger tengo 27 a�os de edad soy casado me case el año pasado
+
