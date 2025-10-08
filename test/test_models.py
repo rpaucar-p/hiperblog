@@ -47,3 +47,41 @@ data = product.serialize()
         results_str = query_str.all()
         self.assertEqual(len(results_str), 1)
         self.assertEqual(results_str[0].price, Decimal("20.0"))
+
+    def test_find_by_category(self)
+        """It should Find Products by category"""
+        products = ProductFactory.create_batch(10)
+        for product in products:
+            product.create()
+        category = product[0].category
+        count = len([product for product in products if product.category == category])
+        found = Product.find_by_category(category)
+        self.assertEqual(found.count(), count)
+        for product in found:
+            self.assertEqual(product.category, category)
+
+    def test_find_by_name(self)
+        """It should Find Products by Name"""
+        products = ProductFactory.create_batch(5)
+        for product in products:
+            product.create()
+        category = product[0].name
+        count = len([product for product in products if product.name == name])
+        found = Product.find_by_name(name)
+        self.assertEqual(found.count(), count)
+        for product in found:
+            self.assertEqual(product.name, name)
+
+    def test_find_by_availability(self)
+        """It should Find Products by Availability"""
+        products = ProductFactory.create_batch(5)
+        for product in products:
+            product.create()
+        category = product[0].available
+        count = len([product for product in products if product.available == available])
+        found = Product.find_by_available(available)
+        self.assertEqual(found.count(), count)
+        for product in found:
+            self.assertEqual(product.available, available)
+
+
